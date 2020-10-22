@@ -69,6 +69,7 @@ def _search_bacon_degree_by_name():
                 {
                     "name": name,
                     "id": actor_id,
+                    "bacon_degree": get_actor_bacon_degree(db_cursor, actor_id),
                     "movies": [
                         movie for movie in get_movies_by_actor(db_cursor, actor_id)
                     ],
