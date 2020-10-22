@@ -21,14 +21,14 @@ $ PORT=5050 ./run.sh
 ## API
 
 ```
-GET /actors/search/bacon-degree?name=:name
+GET /actors/search/bacon-degree?name=<name>
 ```
 
 Get bacon degree of actor(s) by name.
 
 
 ```
-GET /actors/search?name=:name
+GET /actors/search?name=<name>
 ````
 
 Get actor ids by name.
