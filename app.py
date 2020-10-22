@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Database Connection Management
 
-DATABASE = "bacon.db"
+DATABASE = os.getenv("DATABASE", "./bacon.db")
 
 
 def get_db():

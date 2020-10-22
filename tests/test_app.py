@@ -1,3 +1,4 @@
+import os
 import sqlite3
 import unittest
 
@@ -6,7 +7,7 @@ from app import get_movies_by_actor, get_actor_bacon_degree, search_actors_by_na
 class TestDatabaseLayer(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.conn = sqlite3.connect("bacon.db")
+        cls.conn = sqlite3.connect(os.getenv("DATABASE", "./bacon.db"))
 
     @classmethod
     def tearDownClass(cls):

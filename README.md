@@ -18,6 +18,18 @@ $ python -m unittest
 $ PORT=5050 ./run.sh
 ```
 
+or to run in docker
+
+```bash
+$ docker build -t bacon .
+$ docker run \
+  -d \
+  --rm \
+  -v $(pwd)/bacon.db:/data/bacon.db \
+  -p 5000:5000 \
+  bacon
+```
+
 ## API
 
 ```
