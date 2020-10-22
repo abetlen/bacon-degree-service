@@ -1,6 +1,6 @@
-# Bacon Number Service
+# Bacon Degree Service
 
-HTTP web service to return the [Bacon Number]() for any actor in [The Movie Dataset]().
+HTTP web service to return the [Bacon Number](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon) for any actor in [The Movie Dataset]().
 
 ## Setup
 
